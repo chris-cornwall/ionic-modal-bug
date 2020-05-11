@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { ItemModalPage } from './item-modal/item-modal.page';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +8,16 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  constructor(private modalController: ModalController) {}
 
-  constructor() {}
-
+  async openModal() {
+    const modal = await this.modalController.create({
+      component: ItemModalPage,
+      cssClass: 'item-modal-css',
+      backdropDismiss: true,
+      showBackdrop: true,
+      animated: true,
+    });
+    return await modal.present();
+  }
 }

@@ -1,0 +1,56 @@
+:host {
+  ion-icon {
+    --ionicon-stroke-width: 10px;
+  }
+}
+
+.header-android ion-toolbar:last-child {
+  --border-width: 0 0 0 0px;
+}
+
+.header-ios ion-toolbar:last-child {
+  --border-width: 0 0 0 0px;
+}
+ion-header {
+  height: 30%;
+  border-width: 0px;
+}
+.header-image {
+  width: 100%;
+  height: 80%;
+}
+
+.item-title {
+  text-align: center;
+  font-size: 2em;
+}
+
+.quantity-row {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  text-align: center;
+}
+
+.quantity-add {
+  margin-right: 20%;
+  font-size: 3.6em;
+  color: #8338ec;
+}
+
+.quantity-minus {
+  margin-left: 20%;
+  font-size: 3.6em;
+  color: #8338ec;
+}
+
+.quantity {
+  font-size: 2em;
+}
+
+.order-button-col {
+  text-align: center;
+  position: absolute;
+  margin-top: 10%;
+  width: 100%;
+}
